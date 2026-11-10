@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+:root {
+  --cream: #f8f5ef;
+  --brown: #3b3029;
+  --terracotta: #b87559;
+  --beige: #e9dfd2;
+  --sage: #89917c;
+  --sans: 'Manrope', 'Segoe UI', sans-serif;
+  --heading: 'Playfair Display', Georgia, serif;
+
+  color: var(--brown);
+  background: var(--cream);
+  font: 14px/1.5 var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+body,
+button,
+input {
+  font-family: var(--sans);
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 4px;
+}
+
+::selection {
+  color: #fff;
+  background: #8d604b;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  overflow: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
